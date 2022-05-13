@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/passcode"
+    android:visibility="gone"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/digit1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@android:color/holo_orange_light"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/holo_purple"
+                android:textSize="20sp" />
+
+            <TextView
+
+                android:id="@+id/digit2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/holo_orange_light"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/holo_purple"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/digit3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/holo_orange_light"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/holo_purple"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/digit4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/holo_orange_light"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/holo_purple"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/digit5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/holo_orange_light"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/holo_purple"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/digit6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/holo_orange_light"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/holo_purple"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:id="@+id/keyboadlayout"
+        android:gravity="bottom"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:background="@color/numberActionButton">
+            <TextView
+                android:id="@+id/btn1"
+                style="@style/NumberButtonStyle"
+                android:text="1"/>
+            <TextView
+                android:id="@+id/btn2"
+                style="@style/NumberButtonStyle"
+                android:text="2"/>
+            <TextView
+                android:id="@+id/btn3"
+                style="@style/NumberButtonStyle"
+                android:text="3"/>
+            <TextView
+                android:id="@+id/btn4"
+                style="@style/NumberButtonStyle"
+                android:text="4"/>
+            <TextView
+                android:id="@+id/btn5"
+                style="@style/NumberButtonStyle"
+                android:text="5"/>
+            <TextView
+                android:id="@+id/btn6"
+                style="@style/NumberButtonStyle"
+                android:text="6"/>
+            <TextView
+                android:id="@+id/btn7"
+                style="@style/NumberButtonStyle"
+                android:text="7"/>
+            <TextView
+                android:id="@+id/btn8"
+                style="@style/NumberButtonStyle"
+                android:text="8"/>
+            <TextView
+                android:id="@+id/btn9"
+                style="@style/NumberButtonStyle"
+                android:text="9"/>
+
+            <TextView
+                style="@style/NumberButtonStyle"
+                android:id="@+id/btn0"
+                android:layout_marginEnd="10dp"
+                android:text="0"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+<!--
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:id="@+id/cardView"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="1dp"
+        app:cardCornerRadius="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="akash" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+-->
